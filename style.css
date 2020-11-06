@@ -7,7 +7,11 @@
     --font-color: #fff;
     --gray-color: #292727;
     --pop-color: #2D9CDB;
-
+    --font-biggest: calc(28px + (72 - 28) * ((100vw - 375px) / (1600 - 375)));
+    --font-big: calc(16px + (42 - 16) * ((100vw - 375px) / (1600 - 375)));
+    --font-medium: calc(10px + (26 - 10) * ((100vw - 375px) / (1600 - 375)));
+    --font-small: calc(8px + (18 - 8) * ((100vw - 375px) / (1600 - 375)));
+    --font-smallest: calc(6px + (14 - 6) * ((100vw - 375px) / (1600 - 375)));
 }
 
 html {
@@ -24,7 +28,7 @@ body {
 }
 
 body {
-    font-size: 1.4rem;
+    font-size: calc(10px + (26 - 10) * ((100vw - 375px) / (1600 - 375)));
     text-decoration: none;
 }
 
@@ -38,12 +42,12 @@ header {
 }
 
 .frontPage h1 {
-    font-size: 2rem;
+    font-size: var(--font-biggest);
     margin-left: 10%;
 }
 
 .frontPage h2 {
-    font-size: 0.75rem;
+    font-size: var(--font-medium);
     margin: 0 30% 0 10%;
     z-index: 1;
     overflow-wrap: break-word;
@@ -85,7 +89,7 @@ header {
     border-radius: 15px;
     position: absolute;
     bottom: 11%;
-    font-size: 0.75rem;
+    font-size: var(--font-medium)
 }
 
 
@@ -95,7 +99,7 @@ header {
     margin: 0;
     padding: 0;
     display: inline;
-    font-size: 0.5rem;
+    font-size: var(--font-smallest);
 }
 
 .lang li {
@@ -104,7 +108,7 @@ header {
     margin-top: 2%;
 }
 
-.template #me {
+.template #me, #frootz {
     float: right;
     height: 100%;
     border-radius: 0 12px 12px 0;
@@ -120,7 +124,7 @@ header {
 }
 
 .templateFooter {
-    font-size: 0.5rem;
+    font-size: var(--font-smallest);
     position: absolute;
     bottom: 0%;
     margin-left: 3%;
@@ -138,9 +142,10 @@ header {
 .skills h3 {
     margin-top: 14%;
     margin-left: 10%;
-    font-size: 1.5rem;
+    font-size: var(--font-big)
 }
 #templateTextSkills {
+    font-size: var(--font-small);
     list-style-type: none;
     overflow: hidden;
     margin: 10% 0% 10% 5%;
@@ -151,7 +156,37 @@ header {
 }
 
 .templateFooterNumber {
+    font-size: var(--font-smallest);
     position: absolute;
     bottom: 1%;
     right: 3%;
+}
+
+/* TEMPLATE PROJECTS */
+.projectsBackground {
+    background: #fff;
+}
+
+.template.projects {
+    position: relative;
+    margin: 15% 0 15% 0;
+}
+
+.projects h3 {
+    margin-top: 14%;
+    margin-left: 3%;
+    font-size: var(--font-big)
+}
+
+#projectText {
+    position: relative;
+    top: 13%;
+    margin-left: 3%;
+    margin-right: 63%;
+    transform: translateY(-50%);
+    font-size: var(--font-small);
+}
+
+footer {
+    height: 10vh;
 }
