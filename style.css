@@ -36,6 +36,15 @@ header {
     height: 10vw;
 }
 
+.github a {
+    outline: none;
+    color: var(--font-color)
+}
+
+.github a:hover {
+    color: var(--pop-color);
+}
+
 /* FRONT PAGE */
 .frontPage {
     position: relative;
@@ -44,6 +53,14 @@ header {
 .frontPage h1 {
     font-size: var(--font-biggest);
     margin-left: 10%;
+}
+
+.outsideDiv {
+    display: inline-block;
+}
+
+.insideDiv {
+    display: none;
 }
 
 .frontPage h2 {
@@ -81,7 +98,7 @@ header {
 
 .template {
     height: 60vw;
-    max-height: 600px;
+    max-height: 500px;
     width: 90vw;
     max-width: 800px;
     background: #000000;
@@ -121,6 +138,26 @@ header {
     margin-right: 55%;
     transform: translateY(-50%);
     text-indent: 0;
+}
+
+.contactMe {
+    display: inherit;
+    position: relative;
+    top: 44%;
+    margin-left: 14%;
+    margin-right: 55%;
+    transform: translateY(-50%);
+    padding: 8px;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    background: #000;
+    font-size: var(--font-small);
+    outline: none;
+}
+
+.contactMe a {
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 .templateFooter {
@@ -170,6 +207,7 @@ header {
 .template.projects {
     position: relative;
     margin: 15% 0 15% 0;
+    border: 2px solid #000;
 }
 
 .projects h3 {

@@ -1,0 +1,39 @@
+@media only screen and (min-width:975px) {
+    .grayContainer {
+        height: 250px;
+    }
+
+    .outsideDiv {
+        display: none;
+    }
+
+    .insideDiv {
+        display: inline-block;
+    }
+
+    .whiteContainer {
+        height: 350px;
+    }
+    .templateContainer.frontpage, 
+    .templateContainer.projects {
+        padding-left: 16vw;
+    }
+
+    .template {
+        bottom: 6%;
+    }
+    .templateContainer.skills {
+        padding-right: 16vw;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .templateContainer.frontpage, 
+    .templateContainer.projects {
+        padding-left: 28vw;
+    }
+
+    .templateContainer.skills {
+        padding-right: 28vw;
+    }
+}
