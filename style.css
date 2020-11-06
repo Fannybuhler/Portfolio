@@ -36,12 +36,12 @@ header {
     height: 10vw;
 }
 
-.github a {
+.github {
     outline: none;
     color: var(--font-color)
 }
 
-.github a:hover {
+.github:hover {
     color: var(--pop-color);
 }
 
@@ -132,21 +132,18 @@ header {
 }
 
 .template #templateText {
-    position: relative;
-    top: 44%;
-    margin-left: 5%;
-    margin-right: 55%;
-    transform: translateY(-50%);
-    text-indent: 0;
+    margin: 13%;
+}
+
+.textWrapper {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactMe {
-    display: inherit;
-    position: relative;
-    top: 44%;
-    margin-left: 14%;
-    margin-right: 55%;
-    transform: translateY(-50%);
     padding: 8px;
     border-radius: 7px;
     border: 2px solid #fff;
@@ -158,6 +155,10 @@ header {
 .contactMe a {
     text-decoration: none;
     color: var(--font-color);
+}
+
+.contactMe a:hover {
+    color: var(--pop-color);
 }
 
 .templateFooter {
