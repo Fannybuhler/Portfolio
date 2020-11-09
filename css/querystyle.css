@@ -1,22 +1,9 @@
 @media only screen and (min-width:975px) {
-    #navIcon {
-        width: 60px;
-        height: 45px;
-        margin: 50px;
-    }
 
-    #navIcon span {
-        height: 9px;
-    }
-
-    #navIcon span:nth-child(2), #navIcon span:nth-child(3) {
-        top: 18px;
+    .topnav #myLinks {
+        margin-top: 0%;
       }
 
-    #navIcon span:nth-child(4) {
-        top: 36px;
-    }
-      
     .frontPage h2 {
         margin-right: 65%;
     } 
@@ -49,6 +36,24 @@
 }
 
 @media only screen and (min-width:1100px) {
+    #navIcon {
+        width: 50px;
+        height: 45px;
+        margin: 50px;
+    }
+
+    #navIcon span {
+        height: 7px;
+    }
+
+    #navIcon span:nth-child(2), #navIcon span:nth-child(3) {
+        top: 15px;
+      }
+
+    #navIcon span:nth-child(4) {
+        top: 30px;
+    }
+
     .template {
         bottom: 20%;
     }

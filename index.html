@@ -5,20 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web Developer Portfolio</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="css/querystyle.css" type="text/css" />
         <link rel="stylesheet" href="css/navBar.css" type="text/css" />
+        <link rel="stylesheet" href="css/querystyle.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />    
         <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">   
         <script src="app.js" defer></script>
     </head>
     <body>
         <header>
-            <div id="navIcon">
+            <div id="navIcon" href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-              </div>
+            </div>
+
+            <div class="topnav">
+                <div id="myLinks">
+                    <a href="#news">About</a>
+                    <a href="#contact">Skills</a>
+                    <a href="#about">Projects</a>
+                </div>
+            </div>
         </header>
         <section class="frontPage">
             <h1 id="title" class="outsideDiv">WEB-DEVELOPER<br />PORTFOLIO</h1>
@@ -39,7 +47,7 @@
                     <img id="me" src="images/me.png" alt="it's me" />
                     <div class="textWrapper">
                         <p id="templateText"><br>My name is Fanny Buhlér and I’m a Frontend Developer student at Hyper Island.</p>
-                        <button class="contactMe"><a href="mailto:fanny.buhler@hyperisland.se">CONTACT ME</a></button>
+                        <button class="contactMe" href="mailto:fanny.buhler@hyperisland.se">CONTACT ME</button>
                     </div>
                         <p class="templateFooter">About me</p>
                         <p class="templateFooterNumber">01</p>
@@ -48,7 +56,7 @@
             <div class="whiteContainer">
                 <div class="whiteContainerText">
                     <h3>About me</h3>
-                    <p>Just a country gal from northern Sweden with big ambitions and aspirations. Let's get in touch!</p>
+                    <p>Just a country gal from northern Sweden with big ambitions. Let's get in touch!</p>
                 </div>
             </div>
         </section>

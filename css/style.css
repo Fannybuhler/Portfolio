@@ -96,7 +96,7 @@ body {
 }
 
 .backroundMountain {
-    /* background-image: url(images/Mountain.png); */
+    background-image: url(/images/Mountain.png);
     width: 100%;
     height: 32vw;
     background-size: cover;
@@ -164,15 +164,21 @@ body {
     background: #000;
     font-size: var(--font-small);
     outline: none;
+    letter-spacing: 1px;
 }
 
-.contactMe a {
+.contactMe {
     text-decoration: none;
     color: var(--font-color);
 }
 
-.contactMe a:hover {
-    color: var(--pop-color);
+.contactMe:hover {
+    border: 2px solid var(--pop-color);
+    background: var(--pop-color);
+}
+
+.contactMe:active {
+    letter-spacing: 2px;
 }
 
 .templateFooter {
