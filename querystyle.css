@@ -1,8 +1,25 @@
 @media only screen and (min-width:975px) {
-    .grayContainer {
-        height: 250px;
+    #navIcon {
+        width: 60px;
+        height: 45px;
+        margin: 50px;
     }
 
+    #navIcon span {
+        height: 9px;
+    }
+
+    #navIcon span:nth-child(2), #navIcon span:nth-child(3) {
+        top: 18px;
+      }
+
+    #navIcon span:nth-child(4) {
+        top: 36px;
+    }
+      
+    .frontPage h2 {
+        margin-right: 65%;
+    } 
     .outsideDiv {
         display: none;
     }
@@ -25,25 +42,47 @@
     .templateContainer.skills {
         padding-right: 16vw;
     }
+
+    .contactMe {
+        padding: 12px;
+    }
 }
 
 @media only screen and (min-width:1100px) {
+    .template {
+        bottom: 20%;
+    }
+
     .templateContainer.frontpage, 
     .templateContainer.projects {
-        padding-left: 28vw;
+        padding-left: 32vw;
     }
 
     .templateContainer.skills {
-        padding-right: 28vw;
+        padding-right: 32vw;
     }
 
     .textWrapper {
         margin-top: 6vw;
     }
+
+    .whiteContainerText h3, 
+    .whiteContainerText p {
+        display: inline-block;
+    }
+
 }
 
-@media only screen and (min-width:1348px) {
-    .textWrapper {
-        margin-top: 4vw;
+@media only screen and (min-width:1280px) {
+    .frontPage h1 {
+        margin-top: 0;
+    }
+
+    .backgroundMountain {
+        height: 28vw;
+        background-position-y: bottom;
+    }
+    .grayContainer {
+        display: none;
     }
 }
