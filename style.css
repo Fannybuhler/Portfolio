@@ -3,14 +3,14 @@
 }
 
 :root {
-    --main-bg-color: #010101;
+    --main-bg-color: #090909;
     --font-color: #fff;
     --gray-color: #292727;
     --pop-color: #2D9CDB;
-    --font-biggest: calc(28px + (72 - 28) * ((100vw - 375px) / (1600 - 375)));
-    --font-big: calc(16px + (42 - 16) * ((100vw - 375px) / (1600 - 375)));
-    --font-medium: calc(10px + (26 - 10) * ((100vw - 375px) / (1600 - 375)));
-    --font-small: calc(8px + (18 - 8) * ((100vw - 375px) / (1600 - 375)));
+    --font-biggest: calc(28px + (48 - 28) * ((100vw - 375px) / (1600 - 375)));
+    --font-big: calc(16px + (34 - 16) * ((100vw - 375px) / (1600 - 375)));
+    --font-medium: calc(10px + (24 - 10) * ((100vw - 375px) / (1600 - 375)));
+    --font-small: calc(8px + (17 - 8) * ((100vw - 375px) / (1600 - 375)));
     --font-smallest: calc(6px + (14 - 6) * ((100vw - 375px) / (1600 - 375)));
 }
 
@@ -30,10 +30,6 @@ body {
 body {
     font-size: calc(10px + (26 - 10) * ((100vw - 375px) / (1600 - 375)));
     text-decoration: none;
-}
-
-header {
-    height: 10vw;
 }
 
 .github {
@@ -79,6 +75,24 @@ header {
     background: #ffffff;
     height: 46vw;
     border-bottom: 5px solid var(--pop-color);
+}
+
+.whiteContainerText {
+    padding: 3% 65% 5% 5%;
+    color: #000;
+}
+
+.whiteContainerText h3, 
+.whiteContainerText p {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.whiteContainerText h3 {
+
+    font-weight: 400;
 }
 
 .backroundMountain {
@@ -172,6 +186,9 @@ header {
 }
 
 /* SKILLS TEMPLATE */
+.mySkills {
+    background: var(--main-bg-color);
+}
 
 .template.skills {
     position: relative;
