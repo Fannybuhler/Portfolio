@@ -96,9 +96,9 @@ body {
 }
 
 .backroundMountain {
-    background-image: url(Mountain.png);
+    /* background-image: url(images/Mountain.png); */
     width: 100%;
-    height: 40vw;
+    height: 32vw;
     background-size: cover;
 }
 
