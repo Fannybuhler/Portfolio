@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <div id="navIcon" href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div id="navIcon" href="javascript:void(0);" class="icon" onclick="navPopOut()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -22,22 +22,22 @@
 
             <div class="topnav">
                 <div id="myLinks">
-                    <a href="#news">About</a>
-                    <a href="#contact">Skills</a>
-                    <a href="#about">Projects</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#skills" onclick="closeNav()">Skills</a>
+                    <a href="#projects" onclick="closeNav()">Projects</a>
                 </div>
             </div>
         </header>
         <section class="frontPage">
             <h1 id="title" class="outsideDiv">WEB-DEVELOPER<br />PORTFOLIO</h1>
-            <div class="backroundMountain">
+            <div class="backroundMountain" id="about">
                 <h1 id="title" class="insideDiv">WEB-DEVELOPER<br />PORTFOLIO</h1>
                 <h2 id="underTitle">This project was created as part of a
                     Hyper Island project brief. <br>
                     Let’s go.
                 </h2>
             </div>
-            <div class="grayContainer"></div>
+            <!-- <div class="grayContainer"></div> -->
             <div class="templateContainer frontpage">
                 <div class="template">
                     <ul class="lang">
@@ -47,7 +47,10 @@
                     <img id="me" src="images/me.png" alt="it's me" />
                     <div class="textWrapper">
                         <p id="templateText"><br>My name is Fanny Buhlér and I’m a Frontend Developer student at Hyper Island.</p>
-                        <button class="contactMe" href="mailto:fanny.buhler@hyperisland.se">CONTACT ME</button>
+                        <button class="contactMe">CONTACT ME</button>
+                        <div id="email" class="hidden">
+                            <p>fanny.buhler@hyperisland.se</p>
+                        </div>
                     </div>
                         <p class="templateFooter">About me</p>
                         <p class="templateFooterNumber">01</p>
@@ -61,7 +64,7 @@
             </div>
         </section>
 
-        <section class="mySkills">
+        <section class="mySkills" id="skills">
             <div class="templateContainer skills">
                 <div class="template skills">
                     <ul class="lang">
@@ -85,7 +88,7 @@
             </div>
         </section>
 
-        <section class="projectsBackground">
+        <section class="projectsBackground" id="projects">
             <div class="templateContainer projects">
                 <div class="template projects">
                     <ul class="lang">
@@ -95,9 +98,23 @@
                     <img id="frootz" src="images/Frootz.png" alt="colorful screenshot of game" />
                     <h3>Frootz project</h3>
                     <p id="projectText">Frootz was my first vanilla JavaScript project, a simple game with old school graphics.
-                        Available on <a class="github" href="https://fannybuhler.github.io/first-JS-game/">GitHub</a></p>
+                        Available on <a class="github" href="https://fannybuhler.github.io/first-JS-game/">GitHub.</a></p>
                     <p class="templateFooter">Projects</p>
                     <p class="templateFooterNumber">03</p>
+                </div>
+            </div>
+            <div class="templateContainer projects">
+                <div class="template projects">
+                    <ul class="lang">
+                        <li>EN</li>
+                        <li>SV</li>
+                    </ul>
+                    <img id="habitTracker" src="images/habitTracker.png" alt="a habit tracker with icons on top and a calendar underneath" />
+                    <h3>Habit Tracker</h3>
+                    <p id="projectText">This project was a team effort for school, a simple website to track your habits and see the progress.
+                        Available on <a class="github" href="https://kol845.github.io/Habit-Tracker/">GitHub.</a></p>
+                    <p class="templateFooter">Projects</p>
+                    <p class="templateFooterNumber">04</p>
                 </div>
             </div>
         </section>

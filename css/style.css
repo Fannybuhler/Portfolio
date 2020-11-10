@@ -96,10 +96,8 @@ body {
 }
 
 .backroundMountain {
-    background-image: url(/images/Mountain.png);
     width: 100%;
-    height: 32vw;
-    background-size: cover;
+    height: 31vw;
 }
 
 /* FRONT PAGE TEMPLATE */
@@ -119,7 +117,7 @@ body {
     border: 2px solid #ffffff;
     border-radius: 15px;
     position: absolute;
-    bottom: 11%;
+    bottom: 7%;
     font-size: var(--font-medium)
 }
 
@@ -139,7 +137,7 @@ body {
     margin-top: 2%;
 }
 
-.template #me, #frootz {
+.template #me, #frootz, #habitTracker {
     float: right;
     height: 100%;
     border-radius: 0 12px 12px 0;
@@ -179,6 +177,33 @@ body {
 
 .contactMe:active {
     letter-spacing: 2px;
+}
+
+#email {
+    font-size: var(--font-smallest);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 8px;
+    letter-spacing: 1px; 
+    margin-top: 2px;
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+      }
+      80% {
+        transform: scaleY(1.1)
+      }
+      100% {
+        transform: scaleY(1)
+      }
 }
 
 .templateFooter {
