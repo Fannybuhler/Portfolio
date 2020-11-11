@@ -4,8 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web Developer Portfolio</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <link rel="stylesheet" href="css/navBar.css" type="text/css" />
+        <link rel="stylesheet" href="css/carousel.css" type="text/css" />
         <link rel="stylesheet" href="css/querystyle.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />    
         <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">   
@@ -13,18 +15,20 @@
     </head>
     <body>
         <header>
-            <div id="navIcon" href="javascript:void(0);" class="icon" onclick="navPopOut()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="menuWrapper">
+                <div id="navIcon" href="javascript:void(0);" class="icon" onclick="navPopOut()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-            <div class="topnav">
-                <div id="myLinks">
-                    <a href="#about" onclick="closeNav()">About</a>
-                    <a href="#skills" onclick="closeNav()">Skills</a>
-                    <a href="#projects" onclick="closeNav()">Projects</a>
+                <div class="topnav">
+                    <div id="myLinks">
+                        <a href="#about" onclick="closeNav()">About</a>
+                        <a href="#skills" onclick="closeNav()">Skills</a>
+                        <a href="#projects" onclick="closeNav()">Projects</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -37,7 +41,7 @@
                     Let’s go.
                 </h2>
             </div>
-            <!-- <div class="grayContainer"></div> -->
+
             <div class="templateContainer frontpage">
                 <div class="template">
                     <ul class="lang">
@@ -89,35 +93,50 @@
         </section>
 
         <section class="projectsBackground" id="projects">
-            <div class="templateContainer projects">
-                <div class="template projects">
-                    <ul class="lang">
-                        <li>EN</li>
-                        <li>SV</li>
-                    </ul>
-                    <img id="frootz" src="images/Frootz.png" alt="colorful screenshot of game" />
-                    <h3>Frootz project</h3>
-                    <p id="projectText">Frootz was my first vanilla JavaScript project, a simple game with old school graphics.
-                        Available on <a class="github" href="https://fannybuhler.github.io/first-JS-game/">GitHub.</a></p>
-                    <p class="templateFooter">Projects</p>
-                    <p class="templateFooterNumber">03</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="templateContainer projects">
+                        <div class="template projects">
+                            <ul class="lang">
+                                <li>EN</li>
+                                <li>SV</li>
+                            </ul>
+                            <img id="frootz" src="images/Frootz.png" alt="colorful screenshot of game" />
+                            <h3>Frootz project</h3>
+                            <p id="projectText">Frootz was my first vanilla JavaScript project, a simple game with old school graphics.
+                                Available on <a class="github" href="https://fannybuhler.github.io/first-JS-game/">GitHub.</a></p>
+                            <p class="templateFooter">Projects</p>
+                            <p class="templateFooterNumber">03</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="templateContainer projects">
+                        <div class="template projects">
+                            <ul class="lang">
+                                <li>EN</li>
+                                <li>SV</li>
+                            </ul>
+                            <img id="habitTracker" src="images/habitTracker.png" alt="a habit tracker with icons on top and a calendar underneath" />
+                            <h3>Habit Tracker</h3>
+                            <p id="projectText">This project was a team effort for school, a simple website to track your habits and see the progress.
+                                Available on <a class="github" href="https://kol845.github.io/Habit-Tracker/">GitHub.</a></p>
+                            <p class="templateFooter">Projects</p>
+                            <p class="templateFooterNumber">04</p>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="templateContainer projects">
-                <div class="template projects">
-                    <ul class="lang">
-                        <li>EN</li>
-                        <li>SV</li>
-                    </ul>
-                    <img id="habitTracker" src="images/habitTracker.png" alt="a habit tracker with icons on top and a calendar underneath" />
-                    <h3>Habit Tracker</h3>
-                    <p id="projectText">This project was a team effort for school, a simple website to track your habits and see the progress.
-                        Available on <a class="github" href="https://kol845.github.io/Habit-Tracker/">GitHub.</a></p>
-                    <p class="templateFooter">Projects</p>
-                    <p class="templateFooterNumber">04</p>
-                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <footer></footer>
     </body>
 </html>

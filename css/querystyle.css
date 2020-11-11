@@ -1,5 +1,7 @@
 @media only screen and (min-width:975px) {
-
+    /* header {
+        height: 100px;
+    } */
     .topnav #myLinks {
         margin-top: 0%;
       }
@@ -15,31 +17,56 @@
         display: inline-block;
     }
 
+    #about {
+        height: 51vw;
+    }
+
+    .textWrapper {
+        margin-top: 11vw;
+    }
+
     .whiteContainer {
         height: 350px;
-    }
-    .templateContainer.frontpage, 
-    .templateContainer.projects {
-        padding-left: 16vw;
     }
 
     .template {
         bottom: 6%;
     }
-    .templateContainer.skills {
-        padding-right: 16vw;
-    }
 
     .contactMe {
-        padding: 12px;
+        padding: 17px;
     }
-}
+
+    #email {
+        padding: 10px;
+        font-size: var(--font-small);
+    }
+
+    .swiper-button-next {
+        right: 5%;
+    }
+    .swiper-button-prev {
+        left: 5%;
+    }
+
+    .projects h3 {
+        margin-top: 16%;
+    }
+    #templateTextSkills {
+        font-size: var(--font-medium);
+    }
+
+    #projectText {
+        top: 20%;
+        font-size: var(--font-medium);
+    }
 
 @media only screen and (min-width:1100px) {
+    header {
+        height: 150px;
+    }
     #navIcon {
         width: 50px;
-        height: 45px;
-        margin: 50px;
     }
 
     #navIcon span {
@@ -55,7 +82,7 @@
     }
 
     .template {
-        bottom: 20%;
+        bottom: 18%;
     }
 
     .templateContainer.frontpage, 
@@ -83,11 +110,7 @@
         margin-top: 0;
     }
 
-    .backgroundMountain {
-        height: 28vw;
-        background-position-y: bottom;
-    }
-    .grayContainer {
-        display: none;
+    #about {
+        height: 30vw;
     }
 }
