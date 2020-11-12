@@ -45,3 +45,11 @@
     font-size: var(--font-medium);
     outline: none;
 }
+
+.swiper-button-next::after {
+    margin-left: 2px;
+}
+
+.swiper-button-prev::after {
+    margin-right: 2px;
+}

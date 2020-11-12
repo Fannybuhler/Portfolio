@@ -1,9 +1,11 @@
 let navIcon = document.getElementById("navIcon")
-navIcon.addEventListener("click", function(){
-    navIcon.classList.toggle("open");
-});
+navIcon.addEventListener("click", toggleNavIvon)
 
-var links = document.getElementById("myLinks");
+function toggleNavIvon() {
+    navIcon.classList.toggle("open");
+}
+
+const links = document.getElementById("myLinks");
 function navPopOut() {
   if (links.style.display === "block") {
     links.style.display = "none";
@@ -12,12 +14,18 @@ function navPopOut() {
   }
 }
 
-// funkar inte??
+// very handsome yes close nav pls
+const link1 = document.getElementById("link1")
+const link2 = document.getElementById("link2")
+const link3 = document.getElementById("link3")
+
+link1.addEventListener("click", closeNav)
+link2.addEventListener("click", closeNav)
+link3.addEventListener("click", closeNav)
 
 function closeNav() {
-    if (links.style.display === "block") {
-        links.style.display = "none";
-      }
+    links.style.display = "none";
+    toggleNavIvon();
 }
 
 let contactMe = document.querySelector(".contactMe")
@@ -25,6 +33,7 @@ contactMe.addEventListener("click", function(){
     let email = document.getElementById("email");
     email.classList.toggle("hidden");
 });
+
 
 // Scroll function
 

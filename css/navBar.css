@@ -16,8 +16,8 @@ header {
 
 #navIcon {
   width: 30px; 
-  height: 30px;
-  margin-right: 5%;
+  height: 26px;
+  margin: 0 6% 0 3%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -95,7 +95,6 @@ header {
 
 .topnav #myLinks {
   display: none;
-  margin-top: 12%;
 }
 
 .topnav a {

@@ -25,9 +25,9 @@
 
                 <div class="topnav">
                     <div id="myLinks">
-                        <a href="#about" onclick="closeNav()">About</a>
-                        <a href="#skills" onclick="closeNav()">Skills</a>
-                        <a href="#projects" onclick="closeNav()">Projects</a>
+                        <a id="link1" href="#about">About</a>
+                        <a id="link2" href="#skills" onclick="closeNav()">Skills</a>
+                        <a id="link3" href="#projects" onclick="closeNav()">Projects</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
             </div>
 
             <div class="templateContainer frontpage">
-                <div class="template">
+                <div class="template" id="templateAbout">
                     <ul class="lang">
                         <li>EN</li>
                         <li>SV</li>
@@ -53,17 +53,17 @@
                         <p id="templateText"><br>My name is Fanny Buhlér and I’m a Frontend Developer student at Hyper Island.</p>
                         <button class="contactMe">CONTACT ME</button>
                         <div id="email" class="hidden">
-                            <p>fanny.buhler@hyperisland.se</p>
+                            <p id="copyEmail">fanny.buhler@hyperisland.se</p>
                         </div>
                     </div>
                         <p class="templateFooter">About me</p>
-                        <p class="templateFooterNumber">01</p>
+                        <p class="templateFooterNumber" "color:black;" >01</p>
                 </div>
             </div>
             <div class="whiteContainer">
                 <div class="whiteContainerText">
                     <h3>About me</h3>
-                    <p>Just a country gal from northern Sweden with big ambitions. Let's get in touch!</p>
+                    <p>Just a country gal from northern Sweden.<br>Let's get in touch!</p>
                 </div>
             </div>
         </section>
@@ -76,7 +76,7 @@
                         <li>SV</li>
                     </ul>
                     <h3>MY SKILLS</h3>
-                    <ul id="templateTextSkills">
+                    <ul  class="templateTextSkills" id="templateTextSkills">
                         <li>- Adaptive and responsive layout</li>
                         <li>- Graphic editors: Figma</li>
                         <li>- HTML & CSS including Grid</li>
@@ -93,50 +93,58 @@
         </section>
 
         <section class="projectsBackground" id="projects">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="templateContainer projects">
-                        <div class="template projects">
-                            <ul class="lang">
-                                <li>EN</li>
-                                <li>SV</li>
-                            </ul>
-                            <img id="frootz" src="images/Frootz.png" alt="colorful screenshot of game" />
-                            <h3>Frootz project</h3>
-                            <p id="projectText">Frootz was my first vanilla JavaScript project, a simple game with old school graphics.
-                                Available on <a class="github" href="https://fannybuhler.github.io/first-JS-game/">GitHub.</a></p>
-                            <p class="templateFooter">Projects</p>
-                            <p class="templateFooterNumber">03</p>
+            <div class="divSoup">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="templateContainer projects">
+                                <div class="template projects">
+                                    <ul class="lang">
+                                        <li>EN</li>
+                                        <li>SV</li>
+                                    </ul>
+                                    <img id="frootz" src="images/Frootz.png" alt="colorful screenshot of game" />
+                                    <div class="textWrapperProjects">
+                                        <h3>Frootz project</h3>
+                                        <p id="projectText">Frootz was my first vanilla JavaScript project, a simple game with old school graphics.
+                                            Available on <a class="github" href="https://fannybuhler.github.io/first-JS-game/">GitHub.</a></p>
+                                    </div>
+                                    <p class="templateFooter">Projects</p>
+                                    <p class="templateFooterNumber">03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="templateContainer projects">
+                                <div class="template projects">
+                                    <ul class="lang">
+                                        <li>EN</li>
+                                        <li>SV</li>
+                                    </ul>
+                                    <img id="habitTracker" src="images/habitTracker.png" alt="a habit tracker with icons on top and a calendar underneath" />
+                                    <div class="textWrapperProjects">
+                                        <h3>Habit Tracker</h3>
+                                        <p id="projectText">This project was a team effort for school, a simple website to track your habits and see the progress.
+                                            Available on <a class="github" href="https://kol845.github.io/Habit-Tracker/">GitHub.</a></p>
+                                    </div>
+                                    <p class="templateFooter">Projects</p>
+                                    <p class="templateFooterNumber">04</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="templateContainer projects">
-                        <div class="template projects">
-                            <ul class="lang">
-                                <li>EN</li>
-                                <li>SV</li>
-                            </ul>
-                            <img id="habitTracker" src="images/habitTracker.png" alt="a habit tracker with icons on top and a calendar underneath" />
-                            <h3>Habit Tracker</h3>
-                            <p id="projectText">This project was a team effort for school, a simple website to track your habits and see the progress.
-                                Available on <a class="github" href="https://kol845.github.io/Habit-Tracker/">GitHub.</a></p>
-                            <p class="templateFooter">Projects</p>
-                            <p class="templateFooterNumber">04</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </section>
 
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <footer></footer>
+        <footer>
+            <a href="mailto:fanny.buhler@hyperisland.se">fanny.buhler@hyperisland.se</a>
+        </footer>
     </body>
 </html>
