@@ -14,6 +14,21 @@ function navPopOut() {
   }
 }
 
+const en = document.getElementById("en")
+const sv = document.getElementById("sv")
+let templateText = document.getElementById("templateText")
+en.addEventListener("click", changeLang)
+sv.addEventListener("click", changeLang)
+
+
+function changeLang(){
+    if(event.target == en) {
+        templateText.innerHTML = "<br>My name is Fanny Buhlér and I’m a Frontend Developer student at Hyper Island."
+    } else if (event.target == sv) {
+        templateText.innerHTML = "<br>Jag heter Fanny Buhlér och pluggar till Frontend Developer på Hyper Island."
+    }
+}
+
 // very handsome yes close nav pls
 const link1 = document.getElementById("link1")
 const link2 = document.getElementById("link2")
